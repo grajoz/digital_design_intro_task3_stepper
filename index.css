@@ -1,0 +1,59 @@
+
+@font-face {
+    font-family: Roboto; 
+    src: url(assets/Roboto-Regular.ttf);
+}
+
+.stepper {
+    width: 920px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding:0;
+    justify-content: space-around;
+}
+
+.stepper div {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+   
+    color:white;
+  
+    height: 60px;
+}
+
+.stepper__elem {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #686868 0%, #B3B3B3 50.52%, #686868 100%);
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+.active {
+    color: #FFFFFF;
+    background: linear-gradient(180deg, #2EA239 0%, #62FD71 50.52%, #2EA139 100%);
+    text-shadow: 0px 0px 4px rgba(0, 0, 0,1);
+}
+
+.stepper__elem_first {
+    width: 310px;
+    clip-path: polygon(0 0, 0 60px, 300px 60px, 310px 30px, 300px 0);
+}
+
+.stepper__elem_second {
+    width: 310px;
+    clip-path: polygon(0 0, 10px 30px, 0 60px, 300px 60px, 310px 30px, 300px 0);
+}
+
+.stepper__elem_third {
+    width: 300px;
+    clip-path: polygon(0 0, 10px 30px, 0 60px, 300px 60px, 300px 0);
+}
